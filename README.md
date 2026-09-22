@@ -30,7 +30,7 @@ V.GRAPHIKS/
 |   |-- logo.png
 |   |-- mobile-app.png
 |   |-- saas-dashboard.png
-|   `-- vgraphiks_logo.svg
+|   `-- logo.svg
 |-- index.html
 |-- style.css
 |-- script.js
@@ -62,12 +62,10 @@ Tambem pode ser usado o Live Server do Visual Studio Code para uma experiencia m
 - Elementos visuais animados
 
 ### Serviços
-- UI/UX Design
-- Web Development
-- Motion Graphics
-- Mobile Apps
-- Branding
-- Analytics & SEO
+- Identidade Visual
+- Web Design
+- Conteúdo Digital
+- UI/UX
 
 ### Portfólio
 - E-Commerce Platform
@@ -81,8 +79,11 @@ Tambem pode ser usado o Live Server do Visual Studio Code para uma experiencia m
 
 ### Contacto
 - Formulário com nome, email e mensagem
-- Validação simples dos campos
+- Honeypot invisível, atraso mínimo, cooldown local e reCAPTCHA do FormSubmit contra submissões automáticas
+- Validação nativa, limites de tamanho e normalização dos valores antes de criar o email
 - Notificação de sucesso ou erro
+
+> Nota: o formulário usa FormSubmit para enviar as mensagens para o email configurado. Na primeira utilização, o serviço pode pedir confirmação do endereço. As proteções anti-spam no navegador reduzem abuso casual, mas podem ser contornadas.
 
 ## Estado do Projeto
 

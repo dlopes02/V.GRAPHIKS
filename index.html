@@ -1,192 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V.GRAPHIKS │ Creative Designs</title>
+    <meta name="description" content="V.GRAPHIKS - estudio criativo para design, websites, branding e conteudo visual.">
+    <title>V.GRAPHIKS | Creative Studio</title>
     <link rel="icon" href="files/icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="logo" aria-label="V.GRAPHIKS Home">V.GRAPHIKS</a>
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="nav-shell">
+            <a href="#home" class="logo" aria-label="V.GRAPHIKS Home">
+                <img src="files/icon.png" alt="" aria-hidden="true">
+                <span>V.GRAPHIKS</span>
+            </a>
+
             <ul id="main-nav" class="nav-links">
-                <li><a href="#home" data-i18n="navHome">Home</a></li>
-                <li><a href="#services" data-i18n="navServices">Services</a></li>
-                <li><a href="#portfolio" data-i18n="navPortfolio">Portfolio</a></li>
-                <li><a href="#about" data-i18n="navAbout">About</a></li>
-                <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+                <li><a href="#home" data-i18n="navHome">Início</a></li>
+                <li><a href="#services" data-i18n="navServices">Serviços</a></li>
+                <li><a href="#portfolio" data-i18n="navPortfolio">Portfólio</a></li>
+                <li><a href="#about" data-i18n="navAbout">Sobre</a></li>
+                <li><a href="#contact" data-i18n="navContact">Contacto</a></li>
             </ul>
-            <div class="lang-switcher">
-                <button id="languageToggle" type="button" aria-label="Mudar para Português">EN / PT</button>
-            </div>
-            <div id="hamburger" class="hamburger" role="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav" tabindex="0">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-actions">
+                <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch to English">PT / EN</button>
+                <button id="hamburger" class="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span data-i18n="heroTitlePrefix">Creative Design</span> <span class="gradient-text" data-i18n="heroTitleHighlight">Solutions</span>
-                </h1>
-                <p class="hero-subtitle" data-i18n="heroSubtitle">
-                    Transform your vision into stunning digital experiences with cutting-edge design
-                </p>
-                <a href="#contact" class="cta-button" data-i18n="ctaGetStarted">Get Started</a>
-            </div>
-            <div class="hero-animation">
-                <div class="floating-box"></div>
-                <div class="floating-box" style="animation-delay: 1s;"></div>
-                <div class="floating-box" style="animation-delay: 2s;"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title" data-i18n="servicesTitle">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h3 data-i18n="service1Title">UI/UX Design</h3>
-                    <p data-i18n="service1Text">Beautiful, intuitive interfaces that users love. We craft experiences that engage and delight.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3 data-i18n="service2Title">Web Development</h3>
-                    <p data-i18n="service2Text">Modern, responsive websites built with the latest technologies and best practices.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎬</div>
-                    <h3 data-i18n="service3Title">Motion Graphics</h3>
-                    <p data-i18n="service3Text">Dynamic animations and video content that bring your brand to life.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3 data-i18n="service4Title">Mobile Apps</h3>
-                    <p data-i18n="service4Text">Cross-platform applications designed for performance and user engagement.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3 data-i18n="service5Title">Branding</h3>
-                    <p data-i18n="service5Text">Comprehensive brand identity solutions that make your business stand out.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3 data-i18n="service6Title">Analytics & SEO</h3>
-                    <p data-i18n="service6Text">Data-driven strategies to boost your online visibility and performance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title" data-i18n="portfolioTitle">Recent Projects</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="files/e-commerce.png" alt="E-Commerce Platform" />
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container hero-layout">
+                <div class="hero-content">
+                    <p class="eyebrow" data-i18n="heroEyebrow">Design studio independente</p>
+                    <h1>
+                        <span data-i18n="heroTitle">Identidades visuais, websites e conteúdo digital com presença.</span>
+                    </h1>
+                    <p class="hero-subtitle" data-i18n="heroSubtitle">
+                        A V.GRAPHIKS cria marcas, interfaces e peças visuais com estética forte, detalhe técnico e foco em resultados.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="button button-primary" data-i18n="ctaGetStarted">Pedir orçamento</a>
+                        <a href="#portfolio" class="button button-secondary" data-i18n="ctaViewWork">Ver trabalhos</a>
                     </div>
-                    <h3 data-i18n="portfolio1Title">E-Commerce Platform</h3>
-                    <p data-i18n="portfolio1Text">Modern shopping experience with seamless checkout</p>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="files/saas-dashboard.png" alt="SaaS Dashboard" />
+
+                <div class="hero-showcase" aria-label="V.GRAPHIKS visual showcase">
+                    <div class="logo-focus">
+                        <img src="files/logo.png" alt="V.GRAPHIKS logo">
                     </div>
-                    <h3 data-i18n="portfolio2Title">SaaS Dashboard</h3>
-                    <p data-i18n="portfolio2Text">Intuitive analytics dashboard for data insights</p>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="files/mobile-app.png" alt="Mobile App Design" />
-                    </div>
-                    <h3 data-i18n="portfolio3Title">Mobile App Design</h3>
-                    <p data-i18n="portfolio3Text">Native iOS and Android applications</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title" data-i18n="aboutTitle">About V.GRAPHIKS</h2>
-            <div class="about-content">
-                <div class="about-text">
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="servicesEyebrow">O que fazemos</p>
+                    <h2 data-i18n="servicesTitle">Serviços para marcas que querem parecer tão boas quanto trabalham.</h2>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <span class="service-number">01</span>
+                        <h3 data-i18n="service1Title">Identidade Visual</h3>
+                        <p data-i18n="service1Text">Logótipos, paletas, tipografia e sistemas visuais preparados para crescer com a marca.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-number">02</span>
+                        <h3 data-i18n="service2Title">Web Design</h3>
+                        <p data-i18n="service2Text">Sites responsivos, rápidos e com uma experiência clara em desktop e mobile.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-number">03</span>
+                        <h3 data-i18n="service3Title">Conteúdo Digital</h3>
+                        <p data-i18n="service3Text">Peças para redes sociais, campanhas, banners e materiais visuais consistentes.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-number">04</span>
+                        <h3 data-i18n="service4Title">UI/UX</h3>
+                        <p data-i18n="service4Text">Interfaces pensadas para conversão, leitura fácil e navegação sem atrito.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section portfolio">
+            <div class="container">
+                <div class="section-heading split">
+                    <div>
+                        <p class="eyebrow" data-i18n="portfolioEyebrow">Portfólio</p>
+                        <h2 data-i18n="portfolioTitle">Projetos recentes com acabamento visual forte.</h2>
+                    </div>
+                    <p data-i18n="portfolioIntro">Uma seleção de conceitos e trabalhos digitais para mostrar o estilo, ritmo e detalhe da V.GRAPHIKS.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-item">
+                        <img src="files/e-commerce.png" alt="E-commerce project">
+                        <div class="portfolio-copy">
+                            <span data-i18n="portfolio1Tag">Website</span>
+                            <h3 data-i18n="portfolio1Title">E-commerce Visual</h3>
+                            <p data-i18n="portfolio1Text">Experiência de compra moderna com layout limpo e destaque para produto.</p>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <img src="files/saas-dashboard.png" alt="Dashboard project">
+                        <div class="portfolio-copy">
+                            <span data-i18n="portfolio2Tag">Interface</span>
+                            <h3 data-i18n="portfolio2Title">Dashboard SaaS</h3>
+                            <p data-i18n="portfolio2Text">Painel de dados com leitura rápida e hierarquia visual bem definida.</p>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <img src="files/mobile-app.png" alt="Mobile app project">
+                        <div class="portfolio-copy">
+                            <span data-i18n="portfolio3Tag">Mobile</span>
+                            <h3 data-i18n="portfolio3Title">App Concept</h3>
+                            <p data-i18n="portfolio3Text">Ecrãs mobile com navegação simples e estética premium.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container about-layout">
+                <div>
+                    <p class="eyebrow" data-i18n="aboutEyebrow">Sobre</p>
+                    <h2 data-i18n="aboutTitle">Design com personalidade, estrutura e intenção.</h2>
+                </div>
+                <div class="about-copy">
                     <p data-i18n="aboutPara1">
-                        V.GRAPHIKS is a forward-thinking design studio dedicated to creating exceptional digital experiences. With a passion for innovation and a commitment to excellence, we help businesses transform their ideas into reality.
+                        A V.GRAPHIKS é um estúdio criativo focado em transformar ideias em presenças digitais memoráveis.
                     </p>
                     <p data-i18n="aboutPara2">
-                        Our team of talented designers, developers, and creatives work collaboratively to deliver solutions that not only look stunning but also perform exceptionally.
+                        Cada projeto junta estratégia visual, composição cuidada e execução técnica para criar uma marca que se percebe em segundos.
                     </p>
-                    <div class="stats">
+                    <div class="stats" aria-label="Studio statistics">
                         <div class="stat">
-                            <h3>200+</h3>
-                            <p data-i18n="stat1Label">Projects Completed</p>
+                            <strong>200+</strong>
+                            <span data-i18n="stat1Label">Projetos</span>
                         </div>
                         <div class="stat">
-                            <h3>50+</h3>
-                            <p data-i18n="stat2Label">Happy Clients</p>
+                            <strong>50+</strong>
+                            <span data-i18n="stat2Label">Clientes</span>
                         </div>
                         <div class="stat">
-                            <h3>10+</h3>
-                            <p data-i18n="stat3Label">Awards Won</p>
+                            <strong>10+</strong>
+                            <span data-i18n="stat3Label">Prémios</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="files/logo.svg" alt="V.GRAPHIKS Logo" class="logo-image" />
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title" data-i18n="contactTitle">Get In Touch</h2>
-            <p class="contact-subtitle" data-i18n="contactSubtitle">Have a project in mind? Let's create something amazing together.</p>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" data-i18n-placeholder="contactNamePlaceholder" required>
+        <section id="contact" class="section contact">
+            <div class="container contact-layout">
+                <div class="contact-copy">
+                    <p class="eyebrow" data-i18n="contactEyebrow">Contacto</p>
+                    <h2 data-i18n="contactTitle">Tens uma ideia? Vamos dar-lhe forma.</h2>
+                    <p data-i18n="contactSubtitle">Conta-nos o que precisas e respondemos com uma proposta clara.</p>
                 </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" data-i18n-placeholder="contactEmailPlaceholder" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" data-i18n-placeholder="contactMessagePlaceholder" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="cta-button" data-i18n="ctaSendMessage">Send Message</button>
-            </form>
-        </div>
-    </section>
 
-    <!-- Footer -->
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/zecastar69@gmail.com" method="POST" target="_blank" novalidate>
+                    <label class="form-honeypot" aria-hidden="true">
+                        <span>Website</span>
+                        <input type="text" name="_honey" tabindex="-1" autocomplete="off">
+                    </label>
+                    <input type="hidden" name="_subject" value="Novo contacto V.GRAPHIKS">
+                    <input type="hidden" name="_template" value="table">
+                    <label>
+                        <span data-i18n="contactNameLabel">Nome</span>
+                        <input type="text" name="name" autocomplete="name" minlength="2" maxlength="80" placeholder="O teu nome" data-i18n-placeholder="contactNamePlaceholder" required>
+                    </label>
+                    <label>
+                        <span data-i18n="contactEmailLabel">Email</span>
+                        <input type="email" name="email" autocomplete="email" maxlength="160" placeholder="teu@email.com" data-i18n-placeholder="contactEmailPlaceholder" required>
+                    </label>
+                    <label>
+                        <span data-i18n="contactMessageLabel">Mensagem</span>
+                        <textarea name="message" minlength="20" maxlength="3000" placeholder="Fala-nos sobre o projeto" data-i18n-placeholder="contactMessagePlaceholder" rows="5" required></textarea>
+                    </label>
+                    <button type="submit" class="button button-primary" data-i18n="ctaSendMessage">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-layout">
             <p>
-                <span data-i18n="footerCopy">&copy; 2024 V.GRAPHIKS. All rights reserved.</span>
-                <br>
-                <span data-i18n="footerOwner">Diogo "Jiggls" Duarte is the owner of V.GRAPHIKS.</span>
+                <span data-i18n="footerCopy">© 2026 V.GRAPHIKS. Todos os direitos reservados.</span>
+                <span data-i18n="footerOwner">Diogo "Jiggls" Duarte é o proprietário da V.GRAPHIKS.</span>
             </p>
             <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">Instagram</a>
+                <a href="https://www.linkedin.com/in/david-lopes-774a16228/" rel="noreferrer" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/technashi/" rel="noreferrer" target="_blank" aria-label="Instagram">Instagram</a>
             </div>
         </div>
     </footer>
