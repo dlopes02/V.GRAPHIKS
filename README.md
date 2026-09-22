@@ -4,21 +4,20 @@ Site institucional da V.GRAPHIKS, criado para apresentar serviços criativos, pr
 
 ## Visão Geral
 
-Este site é uma landing page responsiva para um estúdio criativo focado em design, desenvolvimento web e experiências digitais.
+Este site é um portfólio responsivo para um estúdio criativo, inspirado numa direção editorial com tipografia forte, formas geométricas e cores primárias.
 
 Permite:
 - Apresentar a marca V.GRAPHIKS
 - Mostrar os principais serviços do estúdio
 - Exibir projetos recentes
 - Apresentar informações sobre a empresa
-- Disponibilizar um formulário de contacto
-- Alternar o idioma entre inglês e português
+- Disponibilizar contactos diretos por email, telefone e WhatsApp
 
 ## Tecnologias
 
 - **HTML5**: estrutura das secções do site
-- **CSS3**: estilos, layout responsivo, gradientes e animações
-- **JavaScript**: menu mobile, troca de idioma, animações no scroll, formulário e notificações
+- **CSS3**: estilos, layout responsivo, composição geométrica e marquee animado
+- **JavaScript**: menu mobile e navegação entre secções
 
 ## Estrutura do Projeto
 
@@ -52,44 +51,39 @@ Tambem pode ser usado o Live Server do Visual Studio Code para uma experiencia m
 ## Funcionalidades
 
 ### Navegação
-- Menu fixo no topo
+- Navegação no topo
 - Links com scroll suave para as secções
 - Menu hambúrguer em dispositivos móveis
-- Botão de idioma EN/PT
 
 ### Página Inicial
-- Apresentação principal da V.GRAPHIKS
-- Elementos visuais animados
+- Apresentação principal com composição tipográfica e formas geométricas
+- Faixa de chamada com animação horizontal
 
 ### Serviços
-- Identidade Visual
+- Branding & Identidade
 - Web Design
-- Conteúdo Digital
-- UI/UX
+- Social Media
+- Design Gráfico
 
 ### Portfólio
-- E-Commerce Platform
-- SaaS Dashboard
-- Mobile App Design
+- Identidade Bauhaus
+- Linhas Orgânicas
+- Surfari
+- The Furnish
+- Furniture Store
+- Surfari — Logotipos
 
 ### Sobre
 - Descrição da V.GRAPHIKS
-- Estatísticas de projetos, clientes e prémios
-- Apresentação visual do logótipo
+- Estatísticas de projetos, clientes e experiência
 
 ### Contacto
-- Formulário com nome, email e mensagem
-- Honeypot invisível, atraso mínimo, cooldown local e reCAPTCHA do FormSubmit contra submissões automáticas
-- Validação nativa, limites de tamanho e normalização dos valores antes de criar o email
-- Notificação de sucesso ou erro
-
-> Nota: o formulário usa FormSubmit para enviar as mensagens para o email configurado. Na primeira utilização, o serviço pode pedir confirmação do endereço. As proteções anti-spam no navegador reduzem abuso casual, mas podem ser contornadas.
+- Email, telefone, WhatsApp, Instagram e Behance
 
 ## Estado do Projeto
 
-Este projeto foi desenvolvido como um site estático para a V.GRAPHIKS e pode continuar a ser atualizado com novos projetos, links reais para redes sociais, integração funcional do formulário e melhorias visuais.
+Este projeto foi desenvolvido como um site estático para a V.GRAPHIKS e pode continuar a ser atualizado com novos projetos, imagens e links reais para redes sociais.
 
 ## Links
 
 - [LinkedIn](https://www.linkedin.com/in/david-lopes-774a16228/)
-- Email: `davidjplopes@gmail.com`

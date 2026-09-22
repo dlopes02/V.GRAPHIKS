@@ -1,0 +1,436 @@
+:root {
+    scroll-padding-top: 104px;
+}
+
+@media (pointer: fine) {
+    html,
+    body,
+    a,
+    button {
+        cursor: none;
+    }
+}
+
+.section-shell {
+    width: 100%;
+    max-width: none;
+    padding-right: clamp(18px, 4vw, 60px);
+    padding-left: clamp(18px, 4vw, 60px);
+}
+
+@media (min-width: 851px) {
+    .section-pad {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .section-top {
+        margin-bottom: 48px;
+    }
+
+    .manifesto.section-pad {
+        padding-top: 32px;
+        padding-bottom: 72px;
+    }
+
+    .services.section-pad {
+        padding-bottom: 48px;
+    }
+
+    .manifesto .section-top {
+        margin-bottom: 28px;
+    }
+}
+
+.site-header {
+    position: fixed;
+    height: 82px;
+    padding: 0 clamp(18px, 4vw, 60px);
+    border-bottom: 1px solid rgba(242, 240, 234, .12);
+    background: rgba(16, 17, 27, .72);
+    backdrop-filter: blur(18px) saturate(130%);
+    -webkit-backdrop-filter: blur(18px) saturate(130%);
+}
+
+.hero {
+    overflow: clip;
+}
+
+.hero h1 {
+    padding-bottom: .12em;
+    white-space: nowrap;
+}
+
+@media (min-width: 1051px) {
+    .hero-copy {
+        width: 54%;
+    }
+
+    .hero-art {
+        right: 3%;
+        width: min(40vw, 520px);
+        height: min(40vw, 520px);
+    }
+}
+
+#work,
+#services,
+#contact {
+    position: relative;
+    z-index: 1;
+    background: var(--night);
+}
+
+#about.manifesto {
+    background: var(--lime);
+    color: var(--night);
+}
+
+.site-header::after {
+    content: "";
+    position: absolute;
+    right: clamp(18px, 4vw, 60px);
+    bottom: -1px;
+    left: clamp(18px, 4vw, 60px);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--lime), transparent);
+    opacity: .35;
+}
+
+.site-header.is-scrolled {
+    background: rgba(16, 17, 27, .92);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, .18);
+}
+
+.site-nav a {
+    position: relative;
+    padding: 8px 0;
+    font-size: .78rem;
+}
+
+.eyebrow,
+.kicker {
+    font-size: .82rem;
+}
+
+.tag {
+    font-size: .78rem;
+}
+
+.service-no {
+    font-size: .8rem;
+}
+
+.service-icon {
+    font-size: 1.2rem;
+}
+
+.section-top p {
+    width: min(340px, 100%);
+    font-size: .96rem;
+}
+
+.work-info h2 {
+    font-size: clamp(2.35rem, 4.6vw, 4.6rem);
+}
+
+.service h3 {
+    font-size: clamp(1.8rem, 2.9vw, 2.9rem);
+}
+
+.service p,
+.manifesto-side > p {
+    font-size: .96rem;
+}
+
+.contact-link {
+    font-size: 1.12rem;
+}
+
+.contact-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-family: "DM Mono", monospace;
+    font-size: .72rem;
+    text-transform: uppercase;
+}
+
+.contact-status .status-time {
+    margin-left: 14px;
+    color: var(--ink);
+}
+
+@media (min-width: 851px) {
+    .contact-status {
+        position: absolute;
+        top: 50%;
+        right: 8%;
+        display: grid;
+        justify-items: end;
+        gap: 16px;
+        color: var(--lime);
+        font-size: clamp(1rem, 1.6vw, 1.45rem);
+        letter-spacing: .04em;
+        transform: translateY(-50%);
+    }
+
+    .contact-status .status-light {
+        display: none;
+    }
+
+    .contact-status .status-time {
+        margin-left: 0;
+        color: var(--ink);
+        font-size: clamp(2rem, 5vw, 5rem);
+        line-height: .85;
+        letter-spacing: -.08em;
+        white-space: nowrap;
+    }
+}
+
+.contact-foot {
+    font-size: .78rem;
+}
+
+@media (max-width: 850px) {
+    .contact-foot {
+        font-size: .72rem;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1050px) {
+    .contact-status {
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        justify-items: initial;
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: .78rem;
+        transform: none;
+    }
+
+    .contact-status .status-light {
+        display: block;
+    }
+
+    .contact-status .status-time {
+        margin-left: 14px;
+        color: var(--ink);
+        font-size: .78rem;
+        line-height: 1;
+        letter-spacing: normal;
+    }
+}
+
+.site-nav a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: var(--lime);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .25s ease;
+}
+
+.site-nav a:hover::after,
+.site-nav a:focus-visible::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.language-toggle {
+    position: relative;
+    min-width: 86px;
+    border: 1px solid rgba(214, 249, 92, .55);
+    border-radius: 2px;
+    padding: 10px 13px 10px 30px;
+    color: var(--ink);
+    background: rgba(214, 249, 92, .08);
+    font: inherit;
+    font-size: .62rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    cursor: pointer;
+    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+    transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.language-toggle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 1px;
+    background: var(--lime);
+    box-shadow: 0 0 0 4px rgba(214, 249, 92, .12);
+    transform: translateY(-50%);
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+    border-color: var(--lime);
+    background: rgba(214, 249, 92, .18);
+    color: var(--lime);
+}
+
+.contact-links {
+    width: min(650px, 100%);
+}
+
+.contact-links .contact-link {
+    width: 100%;
+}
+
+@media (max-width: 850px) {
+    .section-pad {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .section-top {
+        margin-bottom: 34px;
+    }
+
+    .manifesto.section-pad {
+        padding-top: 36px;
+        padding-bottom: 60px;
+    }
+
+    .services.section-pad {
+        padding-bottom: 44px;
+    }
+
+    .manifesto .section-top {
+        margin-bottom: 24px;
+    }
+
+    .hero {
+        min-height: 1080px;
+    }
+
+    .hero-art {
+        top: 720px;
+        right: -5%;
+        width: min(62vw, 360px);
+        height: min(62vw, 360px);
+    }
+
+    .hero h1 {
+        font-size: clamp(3.2rem, 13vw, 7rem);
+    }
+
+    .site-header {
+        height: 70px;
+    }
+
+    .site-nav {
+        top: 70px;
+    }
+
+    .contact-links .contact-link {
+        font-size: .9rem;
+        line-height: 1.35;
+    }
+
+    .contact-status {
+        position: static;
+        margin-top: 14px;
+        font-size: .68rem;
+    }
+
+    .section-top p {
+        width: min(310px, 100%);
+        font-size: .92rem;
+    }
+
+    .work-info h2 {
+        font-size: 2.8rem;
+    }
+
+    .service h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 851px) and (max-width: 1050px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .site-nav {
+        position: absolute;
+        top: 70px;
+        right: 18px;
+        display: grid;
+        gap: 0;
+        width: 210px;
+        padding: 8px;
+        border: 1px solid var(--line);
+        background: rgba(16, 17, 27, .97);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: .25s;
+    }
+
+    .site-nav.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+    }
+
+    .site-nav a {
+        padding: 14px 8px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .language-toggle {
+        justify-self: start;
+        margin: 10px 8px 4px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 1180px;
+        padding-top: 150px;
+    }
+
+    .hero-copy {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(4rem, 8vw, 7rem);
+    }
+
+    .hero-art {
+        top: 720px;
+        right: -5%;
+        width: min(48vw, 440px);
+        height: min(48vw, 440px);
+    }
+
+    .work-list {
+        display: block;
+    }
+
+    .work-offset {
+        margin-top: 80px;
+    }
+
+    .service-layout,
+    .manifesto-copy {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}

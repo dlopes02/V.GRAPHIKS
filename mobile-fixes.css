@@ -1,0 +1,44 @@
+@media (max-width: 850px) {
+    .hero {
+        min-height: 900px;
+        padding-top: 145px;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(3.65rem, 16vw, 7rem);
+        letter-spacing: -.1em;
+        overflow: visible;
+    }
+
+    .hero-description {
+        position: relative;
+        z-index: 4;
+        margin-top: 34px;
+    }
+
+    .magnetic-button {
+        position: relative;
+        z-index: 5;
+    }
+
+    .hero-art {
+        top: 515px;
+        right: -8%;
+        width: 62vw;
+        height: 62vw;
+        opacity: .92;
+    }
+
+    .hero-art .label-top {
+        display: none;
+    }
+
+    .hero-art .label-bottom {
+        bottom: -5%;
+        left: -20%;
+        white-space: nowrap;
+    }
+
+}

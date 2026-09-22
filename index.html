@@ -3,215 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="V.GRAPHIKS - estudio criativo para design, websites, branding e conteudo visual.">
-    <title>V.GRAPHIKS | Creative Studio</title>
+    <meta name="description" content="V.GRAPHIKS — laboratório visual para marcas fora do comum.">
+    <title>V.GRAPHIKS — Visual Lab</title>
     <link rel="icon" href="files/icon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="mobile-fixes.css?v=4">
+    <link rel="stylesheet" href="ui-fixes.css?v=4">
 </head>
 <body>
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="nav-shell">
-            <a href="#home" class="logo" aria-label="V.GRAPHIKS Home">
-                <img src="files/icon.png" alt="" aria-hidden="true">
-                <span>V.GRAPHIKS</span>
-            </a>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
 
-            <ul id="main-nav" class="nav-links">
-                <li><a href="#home" data-i18n="navHome">Início</a></li>
-                <li><a href="#services" data-i18n="navServices">Serviços</a></li>
-                <li><a href="#portfolio" data-i18n="navPortfolio">Portfólio</a></li>
-                <li><a href="#about" data-i18n="navAbout">Sobre</a></li>
-                <li><a href="#contact" data-i18n="navContact">Contacto</a></li>
-            </ul>
-
-            <div class="nav-actions">
-                <button id="languageToggle" class="language-toggle" type="button" aria-label="Switch to English">PT / EN</button>
-                <button id="hamburger" class="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
+    <header class="site-header">
+        <a class="brand" href="#home" data-cursor="link"><span class="brand-mark">V</span><span>GRAPHIKS</span><sup>®</sup></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span>+</span></button>
+        <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
+            <a href="#work" data-cursor="link"><span>01</span>Trabalhos</a>
+            <a href="#services" data-cursor="link"><span>02</span>Serviços</a>
+            <a href="#about" data-cursor="link"><span>03</span>Estúdio</a>
+            <a href="#contact" data-cursor="link"><span>04</span>Contacto</a>
+            <button id="language-toggle" class="language-toggle" type="button" aria-label="Mudar para inglês">PT / EN</button>
+        </nav>
+    </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-bg" aria-hidden="true"></div>
-            <div class="container hero-layout">
-                <div class="hero-content">
-                    <p class="eyebrow" data-i18n="heroEyebrow">Design studio independente</p>
-                    <h1>
-                        <span data-i18n="heroTitle">Identidades visuais, websites e conteúdo digital com presença.</span>
-                    </h1>
-                    <p class="hero-subtitle" data-i18n="heroSubtitle">
-                        A V.GRAPHIKS cria marcas, interfaces e peças visuais com estética forte, detalhe técnico e foco em resultados.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#contact" class="button button-primary" data-i18n="ctaGetStarted">Pedir orçamento</a>
-                        <a href="#portfolio" class="button button-secondary" data-i18n="ctaViewWork">Ver trabalhos</a>
-                    </div>
-                </div>
-
-                <div class="hero-showcase" aria-label="V.GRAPHIKS visual showcase">
-                    <div class="logo-focus">
-                        <img src="files/logo.png" alt="V.GRAPHIKS logo">
-                    </div>
-                </div>
+        <section id="home" class="hero section-shell">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+            <div class="hero-copy reveal">
+                <p class="kicker"><span class="pulse"></span> Laboratório visual independente</p>
+                <h1>Ideias que<br><em>não ficam</em><br>quietas<span>.</span></h1>
+                <p class="hero-description">Criamos identidades, experiências e imagens para marcas que preferem abrir o próprio caminho.</p>
+                <a class="magnetic-button" href="#work" data-cursor="link"><span>Explorar trabalho</span><b>↘</b></a>
+            </div>
+            <div class="hero-art reveal" aria-label="Composição abstrata da V.GRAPHIKS">
+                <div class="art-ring"></div><div class="art-core">VG</div><div class="art-label label-top">FORM<br>FOLLOWS<br>FEELING</div><div class="art-label label-bottom">V.GRAPHIKS / 001</div>
             </div>
         </section>
 
-        <section id="services" class="section services">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="eyebrow" data-i18n="servicesEyebrow">O que fazemos</p>
-                    <h2 data-i18n="servicesTitle">Serviços para marcas que querem parecer tão boas quanto trabalham.</h2>
-                </div>
-
-                <div class="services-grid">
-                    <article class="service-card">
-                        <span class="service-number">01</span>
-                        <h3 data-i18n="service1Title">Identidade Visual</h3>
-                        <p data-i18n="service1Text">Logótipos, paletas, tipografia e sistemas visuais preparados para crescer com a marca.</p>
-                    </article>
-                    <article class="service-card">
-                        <span class="service-number">02</span>
-                        <h3 data-i18n="service2Title">Web Design</h3>
-                        <p data-i18n="service2Text">Sites responsivos, rápidos e com uma experiência clara em desktop e mobile.</p>
-                    </article>
-                    <article class="service-card">
-                        <span class="service-number">03</span>
-                        <h3 data-i18n="service3Title">Conteúdo Digital</h3>
-                        <p data-i18n="service3Text">Peças para redes sociais, campanhas, banners e materiais visuais consistentes.</p>
-                    </article>
-                    <article class="service-card">
-                        <span class="service-number">04</span>
-                        <h3 data-i18n="service4Title">UI/UX</h3>
-                        <p data-i18n="service4Text">Interfaces pensadas para conversão, leitura fácil e navegação sem atrito.</p>
-                    </article>
-                </div>
+        <section id="work" class="work section-shell section-pad">
+            <div class="section-top reveal"><span class="eyebrow">01 / Selected work</span><p>Uma seleção de sistemas visuais, interfaces e mundos que construímos.</p></div>
+            <div class="work-list">
+                <article class="work-card work-main reveal" data-cursor="view"><div class="work-image"><img src="files/e-commerce.png" alt="Projeto de identidade Bauhaus"><span class="image-index">01</span></div><div class="work-info"><div><span class="tag">Branding / 2024</span><h2>Identidade<br><i>Bauhaus</i></h2></div><span class="arrow">↗</span></div></article>
+                <article class="work-card work-offset reveal" data-cursor="view"><div class="work-image"><img src="files/mobile-app.png" alt="Projeto de interface mobile"><span class="image-index">02</span></div><div class="work-info"><div><span class="tag">Digital / 2024</span><h2>The <i>Furnish</i></h2></div><span class="arrow">↗</span></div></article>
+                <article class="work-card reveal" data-cursor="view"><div class="work-image"><img src="files/saas-dashboard.png" alt="Projeto de dashboard"><span class="image-index">03</span></div><div class="work-info"><div><span class="tag">Product / 2023</span><h2>SaaS<br><i>Dashboard</i></h2></div><span class="arrow">↗</span></div></article>
+                <article class="work-card work-offset reveal" data-cursor="view"><div class="work-image"><img src="files/logo.png" alt="Projeto de branding Surfari"><span class="image-index">04</span></div><div class="work-info"><div><span class="tag">Identity / 2024</span><h2><i>Surfari</i></h2></div><span class="arrow">↗</span></div></article>
             </div>
         </section>
 
-        <section id="portfolio" class="section portfolio">
-            <div class="container">
-                <div class="section-heading split">
-                    <div>
-                        <p class="eyebrow" data-i18n="portfolioEyebrow">Portfólio</p>
-                        <h2 data-i18n="portfolioTitle">Projetos recentes com acabamento visual forte.</h2>
-                    </div>
-                    <p data-i18n="portfolioIntro">Uma seleção de conceitos e trabalhos digitais para mostrar o estilo, ritmo e detalhe da V.GRAPHIKS.</p>
-                </div>
-
-                <div class="portfolio-grid">
-                    <article class="portfolio-item">
-                        <img src="files/e-commerce.png" alt="E-commerce project">
-                        <div class="portfolio-copy">
-                            <span data-i18n="portfolio1Tag">Website</span>
-                            <h3 data-i18n="portfolio1Title">E-commerce Visual</h3>
-                            <p data-i18n="portfolio1Text">Experiência de compra moderna com layout limpo e destaque para produto.</p>
-                        </div>
-                    </article>
-                    <article class="portfolio-item">
-                        <img src="files/saas-dashboard.png" alt="Dashboard project">
-                        <div class="portfolio-copy">
-                            <span data-i18n="portfolio2Tag">Interface</span>
-                            <h3 data-i18n="portfolio2Title">Dashboard SaaS</h3>
-                            <p data-i18n="portfolio2Text">Painel de dados com leitura rápida e hierarquia visual bem definida.</p>
-                        </div>
-                    </article>
-                    <article class="portfolio-item">
-                        <img src="files/mobile-app.png" alt="Mobile app project">
-                        <div class="portfolio-copy">
-                            <span data-i18n="portfolio3Tag">Mobile</span>
-                            <h3 data-i18n="portfolio3Title">App Concept</h3>
-                            <p data-i18n="portfolio3Text">Ecrãs mobile com navegação simples e estética premium.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
+        <section id="services" class="services section-shell section-pad">
+            <div class="section-top reveal"><span class="eyebrow">02 / Capabilities</span><p>Do primeiro rabisco ao último pixel, damos forma ao que ainda não existe.</p></div>
+            <div class="service-layout"><div class="service-heading reveal"><h2>O que<br><i>movemos</i></h2><span class="big-arrow">↘</span></div><div class="service-list">
+                <article class="service reveal"><span class="service-no">01</span><div><h3>Brand worlds</h3><p>Identidades com personalidade, sistemas que resistem ao tempo e marcas impossíveis de ignorar.</p></div><span class="service-icon">↗</span></article>
+                <article class="service reveal"><span class="service-no">02</span><div><h3>Digital experiences</h3><p>Websites e produtos digitais onde cada interação tem um motivo para existir.</p></div><span class="service-icon">↗</span></article>
+                <article class="service reveal"><span class="service-no">03</span><div><h3>Visual stories</h3><p>Campanhas, imagens e conteúdos que transformam atenção em ligação.</p></div><span class="service-icon">↗</span></article>
+            </div></div>
         </section>
 
-        <section id="about" class="section about">
-            <div class="container about-layout">
-                <div>
-                    <p class="eyebrow" data-i18n="aboutEyebrow">Sobre</p>
-                    <h2 data-i18n="aboutTitle">Design com personalidade, estrutura e intenção.</h2>
-                </div>
-                <div class="about-copy">
-                    <p data-i18n="aboutPara1">
-                        A V.GRAPHIKS é um estúdio criativo focado em transformar ideias em presenças digitais memoráveis.
-                    </p>
-                    <p data-i18n="aboutPara2">
-                        Cada projeto junta estratégia visual, composição cuidada e execução técnica para criar uma marca que se percebe em segundos.
-                    </p>
-                    <div class="stats" aria-label="Studio statistics">
-                        <div class="stat">
-                            <strong>200+</strong>
-                            <span data-i18n="stat1Label">Projetos</span>
-                        </div>
-                        <div class="stat">
-                            <strong>50+</strong>
-                            <span data-i18n="stat2Label">Clientes</span>
-                        </div>
-                        <div class="stat">
-                            <strong>10+</strong>
-                            <span data-i18n="stat3Label">Prémios</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="about" class="manifesto section-pad"><div class="section-shell"><div class="section-top reveal"><span class="eyebrow">03 / Studio notes</span><p>Não seguimos tendências. Procuramos tensão, ritmo e clareza.</p></div><div class="manifesto-copy reveal"><p>Design não é decoração.<br><strong>É direção.</strong></p><div class="manifesto-side"><p>Somos um estúdio independente que transforma estratégia em sinais visuais com energia própria. Trabalhamos entre a precisão e o acidente, entre a função e o desejo.</p><div class="stats"><span><b>32</b><small>projetos</small></span><span><b>11</b><small>parcerias</small></span><span><b>04</b><small>anos a criar</small></span></div></div></div></div></section>
 
-        <section id="contact" class="section contact">
-            <div class="container contact-layout">
-                <div class="contact-copy">
-                    <p class="eyebrow" data-i18n="contactEyebrow">Contacto</p>
-                    <h2 data-i18n="contactTitle">Tens uma ideia? Vamos dar-lhe forma.</h2>
-                    <p data-i18n="contactSubtitle">Conta-nos o que precisas e respondemos com uma proposta clara.</p>
-                </div>
-
-                <form class="contact-form" id="contactForm" action="https://formsubmit.co/zecastar69@gmail.com" method="POST" target="_blank" novalidate>
-                    <label class="form-honeypot" aria-hidden="true">
-                        <span>Website</span>
-                        <input type="text" name="_honey" tabindex="-1" autocomplete="off">
-                    </label>
-                    <input type="hidden" name="_subject" value="Novo contacto V.GRAPHIKS">
-                    <input type="hidden" name="_template" value="table">
-                    <label>
-                        <span data-i18n="contactNameLabel">Nome</span>
-                        <input type="text" name="name" autocomplete="name" minlength="2" maxlength="80" placeholder="O teu nome" data-i18n-placeholder="contactNamePlaceholder" required>
-                    </label>
-                    <label>
-                        <span data-i18n="contactEmailLabel">Email</span>
-                        <input type="email" name="email" autocomplete="email" maxlength="160" placeholder="teu@email.com" data-i18n-placeholder="contactEmailPlaceholder" required>
-                    </label>
-                    <label>
-                        <span data-i18n="contactMessageLabel">Mensagem</span>
-                        <textarea name="message" minlength="20" maxlength="3000" placeholder="Fala-nos sobre o projeto" data-i18n-placeholder="contactMessagePlaceholder" rows="5" required></textarea>
-                    </label>
-                    <button type="submit" class="button button-primary" data-i18n="ctaSendMessage">Enviar mensagem</button>
-                </form>
-            </div>
-        </section>
+        <section id="contact" class="contact section-pad section-shell"><div class="contact-inner reveal"><span class="eyebrow">04 / Start a conversation</span><div class="contact-status"><span class="status-light"></span> Lisboa / PT <span class="status-time">00:00:00</span></div><h2>Vamos fazer<br><i>barulho.</i></h2><div class="contact-links"><a class="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=zecastar69@gmail.com" target="_blank" rel="noreferrer" data-cursor="link">Abrir mensagem no Gmail <b>↗</b></a></div><div class="contact-foot"><span>V.GRAPHIKS © 2026</span><div><a href="https://instagram.com/v.graphiks" target="_blank" rel="noreferrer">Instagram</a></div></div></div></section>
     </main>
-
-    <footer class="footer">
-        <div class="container footer-layout">
-            <p>
-                <span data-i18n="footerCopy">© 2026 V.GRAPHIKS. Todos os direitos reservados.</span>
-                <span data-i18n="footerOwner">Diogo "Jiggls" Duarte é o proprietário da V.GRAPHIKS.</span>
-            </p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/david-lopes-774a16228/" rel="noreferrer" target="_blank">LinkedIn</a>
-                <a href="https://www.instagram.com/technashi/" rel="noreferrer" target="_blank" aria-label="Instagram">Instagram</a>
-            </div>
-        </div>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
