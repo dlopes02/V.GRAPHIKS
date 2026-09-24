@@ -41,18 +41,10 @@
     <line x1="490" y1="40" x2="490" y2="520"/>
   </g>
 
-  <ellipse cx="340" cy="255" rx="110" ry="130" fill="#f5c842" opacity="0.08" filter="url(#glow)" clip-path="url(#sq)"/>
-
   <polygon points="143,100 200,100 340,380 278,380" fill="url(#vGrad)" clip-path="url(#sq)"/>
   <polygon points="537,100 480,100 340,380 402,380" fill="url(#vGrad)" clip-path="url(#sq)"/>
 
   <polyline points="158,104 340,362 522,104" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.09" clip-path="url(#sq)"/>
-
-  <rect x="143" y="100" width="57" height="4" rx="2" fill="#00c2e0" opacity="1" clip-path="url(#sq)"/>
-  <rect x="480" y="100" width="57" height="4" rx="2" fill="#f5c842" opacity="1" clip-path="url(#sq)"/>
-
-  <circle cx="340" cy="383" r="6" fill="#f5c842" opacity="0.7" clip-path="url(#sq)"/>
-  <circle cx="340" cy="383" r="15" fill="#f5c842" opacity="0.15" clip-path="url(#sq)"/>
 
   <line x1="145" y1="403" x2="535" y2="403" stroke="url(#vGrad)" stroke-width="1" opacity="0.22" clip-path="url(#sq)"/>
 
