@@ -2,6 +2,48 @@
     scroll-padding-top: 104px;
 }
 
+.brand-mark {
+    display: grid;
+    place-items: center;
+    width: 29px;
+    height: 29px;
+    border: 1px solid rgba(214, 249, 92, .7);
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(0, 194, 224, .14), transparent 58%);
+    color: var(--lime);
+    font-size: .9rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    text-align: center;
+    text-indent: 0;
+    padding-top: 0;
+}
+
+.brand-v {
+    display: inline-block;
+    position: static;
+    transform: scaleX(1.15);
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: 0;
+    color: var(--lime);
+    background: none;
+    text-shadow: none;
+}
+
+.brand-v::before,
+.brand-v::after {
+    content: none;
+}
+
 @media (pointer: fine) {
     html,
     body,
@@ -59,6 +101,43 @@
 .hero h1 {
     padding-bottom: .12em;
     white-space: nowrap;
+}
+
+.hero-art .art-ring::before,
+.hero-art .art-ring::after {
+    background: #00c2e0;
+    box-shadow: 0 0 18px rgba(0, 194, 224, .7);
+}
+
+.hero-art .art-ring::before {
+    top: 7%;
+    left: 18%;
+}
+
+.hero-art .art-ring::after {
+    right: 9%;
+    bottom: 22%;
+    background: #f5c842;
+    box-shadow: 0 0 18px rgba(245, 200, 66, .7);
+}
+
+.hero-art .art-core {
+    display: block;
+    width: 66%;
+    height: 66%;
+    overflow: hidden;
+    border-radius: 50%;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.hero-art .art-logo {
+    width: 66%;
+    height: 66%;
+    object-fit: contain;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 24px rgba(214, 249, 92, .24));
 }
 
 @media (min-width: 1051px) {
@@ -192,12 +271,22 @@
 }
 
 .contact-foot {
-    font-size: .78rem;
+    font-size: .86rem;
+    gap: 12px;
 }
 
 @media (max-width: 850px) {
+    html {
+        scroll-padding-top: 82px;
+    }
+
+    .hero h1 {
+        white-space: normal;
+    }
+
     .contact-foot {
-        font-size: .72rem;
+        flex-wrap: wrap;
+        font-size: .8rem;
         line-height: 1.5;
     }
 }

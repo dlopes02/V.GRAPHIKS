@@ -72,15 +72,16 @@
             heroTitle: "Ideias que<br><em>não ficam</em><br>quietas<span>.</span>",
             heroDescription: "Criamos identidades, experiências e imagens para marcas que preferem abrir o próprio caminho.",
             heroButton: "Explorar trabalho",
+            sectionLabels: ["01 / Trabalho selecionado", "02 / Competências", "03 / Notas do estúdio", "04 / Começar uma conversa"],
             workIntro: "Uma seleção de sistemas visuais, interfaces e mundos que construímos.",
             servicesIntro: "Do primeiro rabisco ao último pixel, damos forma ao que ainda não existe.",
-            projects: [["Branding / 2024", "Identidade<br><i>Bauhaus</i>"], ["Digital / 2024", "The <i>Furnish</i>"], ["Product / 2023", "SaaS<br><i>Dashboard</i>"], ["Identity / 2024", "<i>Surfari</i>"]],
-            services: [["Brand worlds", "Identidades com personalidade, sistemas que resistem ao tempo e marcas impossíveis de ignorar."], ["Digital experiences", "Websites e produtos digitais onde cada interação tem um motivo para existir."], ["Visual stories", "Campanhas, imagens e conteúdos que transformam atenção em ligação."]],
+            projects: [["Marca / 2024", "Identidade<br><i>Bauhaus</i>"], ["Digital / 2024", "The <i>Furnish</i>"], ["Produto / 2023", "SaaS<br><i>Dashboard</i>"], ["Identidade / 2024", "<i>Surfari</i>"]],
+            services: [["Universos de marca", "Identidades com personalidade, sistemas que resistem ao tempo e marcas impossíveis de ignorar."], ["Experiências digitais", "Websites e produtos digitais onde cada interação tem um motivo para existir."], ["Histórias visuais", "Campanhas, imagens e conteúdos que transformam atenção em ligação."]],
             aboutIntro: "Não seguimos tendências. Procuramos tensão, ritmo e clareza.",
             aboutTitle: "Design não é decoração.<br><strong>É direção.</strong>",
             aboutText: "Somos um estúdio independente que transforma estratégia em sinais visuais com energia própria. Trabalhamos entre a precisão e o acidente, entre a função e o desejo.",
             stats: ["projetos", "parcerias", "anos a criar"],
-            contactKicker: "04 / Start a conversation",
+            contactKicker: "04 / Começar uma conversa",
             contactTitle: "Vamos fazer<br><i>barulho.</i>",
             gmail: "Abrir mensagem no Gmail",
             switchLabel: "Mudar para inglês"
@@ -91,6 +92,7 @@
             heroTitle: "Ideas that<br><em>refuse to</em><br>stay quiet<span>.</span>",
             heroDescription: "We create identities, experiences and images for brands that prefer to carve their own path.",
             heroButton: "Explore work",
+            sectionLabels: ["01 / Selected work", "02 / Capabilities", "03 / Studio notes", "04 / Start a conversation"],
             workIntro: "A selection of visual systems, interfaces and worlds we have built.",
             servicesIntro: "From the first sketch to the final pixel, we give shape to what does not exist yet.",
             projects: [["Branding / 2024", "Bauhaus<br><i>Identity</i>"], ["Digital / 2024", "The <i>Furnish</i>"], ["Product / 2023", "SaaS<br><i>Dashboard</i>"], ["Identity / 2024", "<i>Surfari</i>"]],
@@ -118,6 +120,10 @@
         document.querySelector(".hero h1").innerHTML = copy.heroTitle;
         document.querySelector(".hero-description").textContent = copy.heroDescription;
         document.querySelector(".magnetic-button span").textContent = copy.heroButton;
+        document.querySelector("#work .eyebrow").textContent = copy.sectionLabels[0];
+        document.querySelector("#services .eyebrow").textContent = copy.sectionLabels[1];
+        document.querySelector("#about .eyebrow").textContent = copy.sectionLabels[2];
+        document.querySelector("#contact .eyebrow").textContent = copy.sectionLabels[3];
         document.querySelector("#work .section-top p").textContent = copy.workIntro;
         document.querySelector("#services .section-top p").textContent = copy.servicesIntro;
         document.querySelectorAll(".work-card").forEach((card, index) => {
@@ -145,6 +151,10 @@
     if (languageToggle) {
         languageToggle.addEventListener("click", () => {
             applyLanguage(activeLanguage === "pt" ? "en" : "pt");
+            if (nav) {
+                nav.classList.remove("active");
+                menuToggle?.setAttribute("aria-expanded", "false");
+            }
         });
         applyLanguage(activeLanguage);
     }
